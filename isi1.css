@@ -1,0 +1,119 @@
+:root {
+  --fsepertititle: "Knewave", system-ui;
+  --border: 3px solid #ffff;
+  --fontjol: "Jolly Lodger", system-ui;
+  --poppint: "Poppins", sans-serif;
+}
+
+.isi1 {
+  display: flex;
+  min-height: 100vh;
+}
+.isi1-sub {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 90%;
+  margin-top: 7%;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.kata1 {
+  transition: transform 0.3s ease;
+  color: white;
+  order: 1;
+  width: 350rem;
+  height: 30rem;
+  border: 2px solid;
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  background-color: #004102b3;
+  margin-left: 2rem;
+  border-radius: 2rem;
+  margin-right: 0rem;
+}
+.kata1:hover {
+  transform: scale(1.1);
+}
+.kata0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 2;
+  height: 100%;
+}
+.logo {
+  border: 2px solid #ffff;
+  backdrop-filter: blur(5px);
+  max-width: 20rem;
+  height: 20rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  order: 2;
+  background-color: #004102b3;
+  border-radius: 3rem;
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.katabawahimage {
+  border: 2px solid #ffff;
+  backdrop-filter: blur(5px);
+  text-align: center;
+  margin-top: 10%;
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+  font-family: var(--poppint);
+  font-weight: 600;
+  width: 18rem;
+  height: auto;
+  background-color: #004102b3;
+  border-radius: 2rem;
+  transition: transform 0.3s ease;
+}
+.katabawahimage:hover {
+  transform: scale(1.1);
+}
+.kata1 p {
+  font-family: var(--fontjol);
+  font-size: 3rem;
+}
+.kata2 {
+  color: white;
+
+  width: 20rem;
+  padding: 2rem;
+  background-color: #004102b3;
+
+  border-radius: 2rem;
+}
+.kata2 p {
+  font-family: var(--fontjol);
+  font-size: 3rem;
+}
+@media (max-width: 870px) {
+  .kata1 {
+    margin-left: 0rem;
+    border-radius: 2rem;
+    margin-right: 0.3rem;
+  }
+}
+@media (max-width: 480px) {
+  .kata1 {
+    margin-left: 0rem;
+    border-radius: 2rem;
+    margin-right: 0.3rem;
+  }
+  .kata1 p {
+    font-size: 1.5rem;
+  }
+  .logo {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    order: 2;
+    background-color: #004102b3;
+    border-radius: 3rem;
+  }
+}

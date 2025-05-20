@@ -1,0 +1,111 @@
+:root {
+  --poppins: "Poppins", sans-serif;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  align-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 3px solid #ffff;
+
+  position: fixed;
+  margin: 0;
+  font-family: "Knewave", system-ui;
+  color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  backdrop-filter: blur(5px);
+}
+.judul {
+  margin-left: 7%;
+  text-decoration: none;
+  width: 15rem;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  text-shadow: 1px 2px 0 #686767, /* Bayangan kiri atas */ 2px 1px 0 #686767,
+    /* Bayangan kanan atas */ 1px 0px 0 #686767,
+    /* Bayangan kiri bawah */ 0px 0px 0 #686767; /* Bayangan kanan bawah */
+}
+.menu .menu-atas a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.1rem;
+  color: rgb(255, 255, 255);
+  margin: 0 3rem;
+  font-size: 1.5rem;
+}
+.menu .menu-atas a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.1rem solid #fff;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.menu .menu-atas a:hover::after {
+  transform: scaleX(0.5);
+}
+.buy {
+  padding: 0.5rem;
+  margin: 1rem;
+  height: auto;
+  width: 10rem;
+  font-size: 1.4rem;
+  font-family: var(--poppins);
+  font-weight: 600;
+  text-align: center;
+  background-color: #057939;
+  border-radius: 1rem;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.5s ease; /*buat animasi*/
+}
+.buy:hover {
+  transform: scale(0.9);
+}
+/* tablet */
+@media (max-width: 870px) {
+  html {
+    font-size: 70%;
+  }
+  .judul {
+    width: 15rem;
+  }
+
+  .buy {
+    font-family: var(--poppins);
+    font-weight: 500;
+    width: 10rem;
+    font-size: 1.4rem;
+  }
+
+  .menu .menu-atas a {
+    margin: 0 1rem;
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+  .judul {
+    width: 12rem;
+  }
+
+  .buy {
+    font-family: var(--poppins);
+    font-weight: 500;
+    width: 7rem;
+  }
+
+  .menu .menu-atas a {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+  }
+}
